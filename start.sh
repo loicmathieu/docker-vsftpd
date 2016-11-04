@@ -14,3 +14,5 @@ if [ "$1" = 'ftps_tls' ]; then
  echo "Launching vsftp on ftps with TLS only protocol"
  /usr/sbin/vsftpd /etc/vsftp/vsftp_ftps_tls.conf
 fi
+
+bash
