@@ -2,7 +2,7 @@
 
 if [ "$1" = 'ftp' ]; then
  echo "Launching vsftp on ftp protocol"
- exec /usr/sbin/vsftpd
+ exec /usr/sbin/vsftpd /etc/vsftp/vsftp.conf
 fi
 
 if [ "$1" = 'ftps' ]; then
