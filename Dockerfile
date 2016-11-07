@@ -16,3 +16,4 @@ RUN chmod 755 /start.sh
 EXPOSE 21
 
 ENTRYPOINT ["/start.sh"]
+CMD "ftp"
