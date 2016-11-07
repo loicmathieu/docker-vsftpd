@@ -1,8 +1,5 @@
 #!/bin/sh
 
-#redirect log file to stdout
-/usr/bin/ln -sf /dev/stdout /var/log/xferlog
-
 if [ "$1" = 'ftp' ]; then
  echo "Launching vsftp on ftp protocol"
  exec /usr/sbin/vsftpd /etc/vsftp/vsftp.conf
