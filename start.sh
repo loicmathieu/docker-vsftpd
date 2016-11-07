@@ -11,7 +11,7 @@ if [ "$1" = 'ftps' ]; then
 fi
 
 if [ "$1" = 'ftps_implicit' ]; then
- echo "Launching vsftp on ftps protocol"
+ echo "Launching vsftp on ftps protocol in implicit mode"
  exec /usr/sbin/vsftpd /etc/vsftp/vsftp_ftps_implicit.conf
 fi
 
