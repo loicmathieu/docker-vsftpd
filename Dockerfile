@@ -16,6 +16,9 @@ COPY start.sh /
 
 RUN chmod 755 /start.sh
 
+VOLUME /home/vsftpd
+VOLUME /var/log/vsftpd
+
 EXPOSE 21
 
 ENTRYPOINT ["/start.sh"]
