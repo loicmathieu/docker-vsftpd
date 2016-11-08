@@ -22,7 +22,6 @@ RUN chown ftp:ftp /etc/vsftpd/vsftpd.pem
 VOLUME /home/vsftpd
 VOLUME /var/log/vsftpd
 
-EXPOSE 21
+EXPOSE 20 21 21100-21110
 
 ENTRYPOINT ["/start.sh"]
-CMD "ftp"
