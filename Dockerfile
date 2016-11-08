@@ -17,7 +17,7 @@ COPY start.sh /
 RUN chmod +x /start.sh
 RUN mkdir -p /home/vsftpd/
 RUN chown -R ftp:ftp /home/vsftpd/
-RUN chown ftp:ftp /etc/vsftpd/vsftpd.pem
+RUN chmod 755 /etc/vsftpd/vsftpd.pem
 
 VOLUME /home/vsftpd
 VOLUME /var/log/vsftpd
