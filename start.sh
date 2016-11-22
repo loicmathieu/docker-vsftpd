@@ -2,7 +2,7 @@
 
 if [ "$1" = 'ftp' ]; then
  echo "Launching vsftp on ftp protocol"
- if [ -n $PASV_ADDRESS]; then
+ if [ -n "$PASV_ADDRESS" ]; then
   echo "Activating passv on $PASV_ADDRESS"
   echo "pasv_address=$PASV_ADDRESS" >> /etc/vsftp/vsftp.conf
  fi
@@ -11,7 +11,7 @@ fi
 
 if [ "$1" = 'ftps' ]; then
  echo "Launching vsftp on ftps protocol"
- if [ -n $PASV_ADDRESS]; then
+ if [ -n "$PASV_ADDRESS" ]; then
   echo "Activating passv on $PASV_ADDRESS"
   echo "pasv_address=$PASV_ADDRESS" >> /etc/vsftp/vsftp.conf
  fi
@@ -20,7 +20,7 @@ fi
 
 if [ "$1" = 'ftps_implicit' ]; then
  echo "Launching vsftp on ftps protocol in implicit mode"
- if [ -n $PASV_ADDRESS]; then
+ if [ -n "$PASV_ADDRESS" ]; then
   echo "Activating passv on $PASV_ADDRESS"
   echo "pasv_address=$PASV_ADDRESS" >> /etc/vsftp/vsftp.conf
  fi
@@ -29,7 +29,7 @@ fi
 
 if [ "$1" = 'ftps_tls' ]; then
  echo "Launching vsftp on ftps with TLS only protocol"
- if [ -n $PASV_ADDRESS]; then
+ if [ -n "$PASV_ADDRESS" ]; then
   echo "Activating passv on $PASV_ADDRESS"
   echo "pasv_address=$PASV_ADDRESS" >> /etc/vsftp/vsftp.conf
  fi
