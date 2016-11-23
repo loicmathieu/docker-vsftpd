@@ -11,7 +11,7 @@ RUN useradd -ms /bin/bash guest && echo 'guest:guest' | chpasswd
 COPY vsftp.conf /etc/vsftp/vsftp.conf
 COPY vsftp_ftps.conf /etc/vsftp/vsftp_ftps.conf
 COPY vsftp_ftps_tls.conf /etc/vsftp/vsftp_ftps_tls.conf
-COPY vsftp_ftps_implicit.conf /etc/vdsftp/vsftp_ftps_implicit.conf
+COPY vsftp_ftps_implicit.conf /etc/vsftp/vsftp_ftps_implicit.conf
 COPY start.sh /
 
 RUN chmod +x /start.sh
