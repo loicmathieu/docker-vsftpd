@@ -19,7 +19,7 @@ RUN mkdir -p /home/vsftpd/
 RUN chown -R ftp:ftp /home/vsftpd/
 RUN chmod 755 /etc/vsftpd/vsftpd.pem
 
-VOLUME /home
+VOLUME /home/guest
 VOLUME /var/log/vsftpd
 
 EXPOSE 20 21 21100-21110
