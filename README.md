@@ -21,5 +21,5 @@ docker run -p 21:21 -p21100-21110:21100-21110 --env PASV_ADDRESS=x.x.x.x loicmat
 ```
 
 Two volumes are defined : 
-- /home/vsftpd : the FTP data directory
+- /home : the FTP data directory
 - /var/log/vsftpd : the log directory
