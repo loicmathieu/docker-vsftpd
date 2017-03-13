@@ -1,7 +1,7 @@
 # loicmathieu/vsftpd
 This is a docker container to launch vsftpd. 
 It comes with 4 pre-defined configuration : 
-- ftp : FPT
+- ftp : FTP
 - ftps : FTPS explicit
 - ftps_implicit : FTPS implicit
 - ftps_tls : FTPS explicit with high cypher (ssl_ciphers=HIGH)
